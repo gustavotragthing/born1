@@ -32,6 +32,7 @@ export default function Texto() {
             <p className="text-center font-semibold mt-6">
                 Born: potência, controle e tecnologia no mais alto nível.
             </p>
+
         </div>
     );
 }
