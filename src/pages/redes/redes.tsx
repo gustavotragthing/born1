@@ -62,7 +62,7 @@ export default function Redes() {
 
                     {/* TIKTOK */}
                     <a
-                        href="https://tiktok.com"
+                        href="https://tiktok.com/@born.inverter"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-20 h-20 bg-black rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"

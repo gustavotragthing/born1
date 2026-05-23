@@ -7,9 +7,9 @@ export default function Topo() {
 
     return (
         <>
-            {/* TOPO */}
+       
             <header className="relative flex items-center justify-center bg-[#F4F4F4] h-30 px-6">
-                {/* 3 BARRINHAS */}
+            
                 <button
                     onClick={() => setMenuAberto(true)}
                     className="absolute left-6 flex flex-col gap-1"
@@ -19,7 +19,7 @@ export default function Topo() {
                     <span className="w-8 h-1 bg-black rounded"></span>
                 </button>
 
-                {/* LOGO */}
+    
                 <Image
                     src="/born67.png"
                     alt="Logo Born"
@@ -29,7 +29,7 @@ export default function Topo() {
                 />
             </header>
 
-            {/* FUNDO ESCURO */}
+   
             {menuAberto && (
                 <div
                     onClick={() => setMenuAberto(false)}
@@ -37,7 +37,6 @@ export default function Topo() {
                 />
             )}
 
-            {/* MENU LATERAL */}
             <aside
                 className={`fixed top-0 left-0 h-full bg-white/10 backdrop-blur-md
                 border border-white/20 z-50 shadow-lg

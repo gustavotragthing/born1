@@ -1,30 +1,18 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 
 export default function ImageSlider({ images }: { images: string[] }) {
-    const [index, setIndex] = useState(0);
-
-    function next() {
-        setIndex((prev) => (prev + 1) % images.length);
-    }
-
-    function prev() {
-        setIndex((prev) => (prev - 1 + images.length) % images.length);
-    }
-
     return (
-
-        <div className="relative w-[600px] h-[400px]">
+        <div className="w-full flex justify-center">
             <Image
-                src={images[index]}
+                src={images[0]}
                 alt="Slide"
-                fill
-                className="rounded-xl shadow-lg object-cover"
+                width={1200}
+                height={800}
+                className="w-full max-w-2xl h-auto rounded-xl shadow-lg"
+                priority
             />
-
-
-
-        </div >
+        </div>
     );
 }
+
