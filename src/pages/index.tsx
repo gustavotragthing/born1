@@ -3,87 +3,148 @@ import ImageSlider from "@/components/ImageSlider";
 import Image from "next/image";
 import Link from "next/link";
 
-import Texto from "@/pages/Texto";
-import Topo2 from "@/components/Topo2";
+import Topo from "@/components/Topo2";
 import Born3 from "@/components/Born3";
 import Pe from "@/components/Pe";
 
 export default function Home() {
-  const images = ["/born910.png"];
+  const images = ["/ratata.jpeg"];
 
   return (
     <>
       <Head>
-        <title>Born Inverter</title>
+        <title>Born Eletrônica | Conserto de TVs</title>
 
         <meta
           name="description"
-          content="Especialistas em eletrônica, manutenção e reparo de equipamentos e placas eletrônicas."
+          content="Especialistas em conserto de televisores LED, LCD, OLED e Smart TVs. Diagnóstico preciso, reparo de placas e assistência técnica especializada."
         />
 
         <meta
           name="keywords"
-          content="Born Inverter, eletrônica, manutenção, placas eletrônicas, reparo eletrônico"
+          content="conserto de tv, assistência técnica tv, smart tv, televisão, reparo de placas, born eletrônica"
         />
 
-        <meta name="author" content="Born Inverter" />
+        <meta name="author" content="Born Eletrônica" />
 
-        <meta property="og:title" content="Born Inverter" />
+        <meta property="og:title" content="Born Eletrônica" />
 
         <meta
           property="og:description"
-          content="Especialistas em eletrônica e manutenção de placas eletrônicas."
+          content="Especialistas em manutenção de televisores e reparo eletrônico."
         />
 
-        <meta property="og:image" content="/born910.png" />
-
+        <meta property="og:image" content="/novoimg.jpeg" />
         <meta property="og:type" content="website" />
       </Head>
 
       <main
-        className="text-black bg-cover bg-center min-h-screen overflow-x-hidden"
+        className="min-h-screen bg-cover bg-center text-white overflow-x-hidden"
         style={{ backgroundImage: "url('/eletro.png')" }}
       >
-        <Topo2 />
+        <Topo />
 
-        <section className="pt-16 pb-16 px-4 max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-10">
+        {/* HERO */}
+        <section className="max-w-7xl mx-auto px-6 py-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-            <div className="w-full md:w-1/2 text-white">
-              <h1 className="text-2xl md:text-4xl font-bold mb-4 underline md:text-left">
-                Especialistas em Eletrônica
+            <div>
+
+              <span className="inline-block bg-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-5">
+                Assistência Técnica Especializada
+              </span>
+
+              <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight">
+                Conserto de
+                <span className=""> TVs LED e tvs LCD</span>
               </h1>
 
-              <p className="text-base md:text-lg leading-relaxed bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">
-                Trabalhamos com manutenção, diagnóstico e reparo de equipamentos eletrônicos,
-                oferecendo soluções completas com foco em qualidade, precisão e confiança.
-                Nossa equipe atua com dedicação em cada detalhe, identificando falhas com
-                rapidez e aplicando técnicas modernas para garantir o melhor desempenho e
-                a durabilidade dos aparelhos.
+              <p className="mt-8 text-lg leading-8 bg-black/40 backdrop-blur-md p-6 rounded-2xl border border-white/10">
+                Somos especialistas em manutenção de televisores de diversas
+                marcas e modelos. Realizamos diagnóstico eletrônico,
+                reparo de placas, troca de componentes e recuperação
+                completa do equipamento, sempre utilizando técnicas modernas
+                para garantir qualidade, segurança e durabilidade.
               </p>
+
+              <div className="flex flex-wrap gap-4 mt-8">
+
+                <div className="bg-white/10 rounded-xl px-5 py-3">
+                  ✓ Diagnóstico Preciso
+                </div>
+
+                <div className="bg-white/10 rounded-xl px-5 py-3">
+                  ✓ Reparo de Placas
+                </div>
+
+                <div className="bg-white/10 rounded-xl px-5 py-3">
+                  ✓ Atendimento Rápido
+                </div>
+
+              </div>
+
             </div>
 
-            <div className="w-full md:w-1/2 flex justify-center">
-              <ImageSlider images={images} />
+            <div className="flex justify-center">
+              <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+                <ImageSlider images={images} />
+              </div>
             </div>
 
           </div>
         </section>
 
-        {Array(3).fill(null).map((_, i) => (
-          <br key={i} />
-        ))}
+        {/* DIFERENCIAIS */}
 
-        {Array(3).fill(null).map((_, i) => (
-          <br key={i} />
-        ))}
+        <section className="max-w-7xl mx-auto px-6 pb-20">
 
-        {Array(3).fill(null).map((_, i) => (
-          <br key={i} />
-        ))}
+          <h2 className="text-4xl font-bold text-center mb-14">
+            Por que escolher a Born Eletrônica?
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+
+            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:bg-white/20 transition">
+              <h3 className="text-2xl font-bold mb-4">
+                📺 Especialistas em TVs
+              </h3>
+
+              <p className="text-gray-200 leading-7">
+                Trabalhamos com televisores LED, LCD, OLED, QLED e Smart TVs de
+                diversas marcas.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:bg-white/20 transition">
+              <h3 className="text-2xl font-bold mb-4">
+                🔧 Tecnologia e Precisão
+              </h3>
+
+              <p className="text-gray-200 leading-7">
+                Equipamentos modernos para diagnóstico eletrônico e reparo com
+                alto padrão de qualidade.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:bg-white/20 transition">
+              <h3 className="text-2xl font-bold mb-4">
+                ⭐ Qualidade Garantida
+              </h3>
+
+              <p className="text-gray-200 leading-7">
+                Compromisso com transparência, atendimento de qualidade e
+                satisfação do cliente.
+              </p>
+            </div>
+
+          </div>
+
+        </section>
 
         <Born3 />
+
         <Pe />
+
       </main>
     </>
   );
