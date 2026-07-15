@@ -59,7 +59,7 @@ export default function Home() {
                 <span className=""> TVs LED e tvs LCD</span>
               </h1>
 
-              <p className="mt-8 text-lg leading-8 bg-black/40 backdrop-blur-md p-6 rounded-2xl border border-white/10">
+              <p className=" text-lg  bg-black/40 backdrop-blur-md p-6 rounded-2xl border ">
                 Somos especialistas em manutenção de televisores de diversas
                 marcas e modelos. Realizamos diagnóstico eletrônico,
                 reparo de placas, troca de componentes e recuperação
