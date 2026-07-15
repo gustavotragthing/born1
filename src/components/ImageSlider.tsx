@@ -15,7 +15,7 @@ export default function ImageSlider({ images }: { images: string[] }) {
 
     return (
 
-        <div className="relative w-full max-w-[600px] h-[220px] sm:h-[300px] md:h-[400px]">
+        <div className="relative w-full aspect-[3/2] max-w-[600px]">
             <Image
                 src={images[index]}
                 alt="Slide"
