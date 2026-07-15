@@ -43,7 +43,7 @@ export default function Topo2() {
                     {/* Logo */}
                     <Link href="/">
                         <Image
-                            src="222gato.png"
+                            src="/222gato.png"
                             alt="Born Eletrônica"
                             width={190}
                             height={70}
