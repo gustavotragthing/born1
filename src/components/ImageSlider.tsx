@@ -15,16 +15,17 @@ export default function ImageSlider({ images }: { images: string[] }) {
 
     return (
 
-        <div className="relative w-[600px] h-[400px]">
+        <div className="relative w-full max-w-[600px] h-[220px] sm:h-[300px] md:h-[400px]">
             <Image
                 src={images[index]}
                 alt="Slide"
                 fill
                 className="rounded-xl shadow-lg object-cover"
             />
+        </div>
 
 
 
-        </div >
+
     );
 }
